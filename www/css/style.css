@@ -507,3 +507,29 @@ textarea.form-control {
 .logged-out {
     display: none;
 }
+
+.character-count {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+/* 残り500文字以下（黄色） */
+.character-count.warn {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* 残り10文字以下（赤） */
+.character-count.danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* 文字数オーバー */
+.character-count.error {
+    background-color: #721c24;
+    color: #ffffff;
+}
+
